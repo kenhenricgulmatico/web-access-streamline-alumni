@@ -67,15 +67,15 @@
                                             })"
                                             class="border-gray-300 rounded-sm text-blue-600">
                                     </th>
-                                    <th class="ps-2 sm:ps-6 py-3 text-start font-semibold uppercase text-green-700">
+                                    <th class="ps-2 sm:ps-6 py-3 text-start font-extrabold uppercase text-green-700">
                                         Role
                                     </th>
                                     <th
-                                        class="hidden sm:table-cell px-2 sm:px-6 py-3 text-start font-semibold uppercase text-green-700">
+                                        class="hidden sm:table-cell px-2 sm:px-6 py-3 text-start font-extrabold uppercase text-green-700">
                                         Permissions
                                     </th>
                                     <th
-                                        class="hidden md:table-cell px-2 sm:px-6 py-3 text-start font-semibold uppercase text-green-700">
+                                        class="hidden md:table-cell px-2 sm:px-6 py-3 text-start font-extrabold uppercase text-green-700">
                                         Created
                                     </th>
                                     <th class="px-2 sm:px-6 py-3 text-end"></th>

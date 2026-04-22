@@ -8,10 +8,10 @@
         w-60
         hidden
         fixed inset-y-0 z-60 start-0
-        bg-green-600    
+        bg-green-800
         lg:block lg:-translate-x-full lg:end-auto lg:bottom-0"
         role="dialog" tabindex="-1" aria-label="Sidebar">
-        <div class="lg:pt-13 relative flex flex-col h-full max-h-full">
+        <div class="lg:pt-15 relative flex flex-col h-full max-h-full">
             <!-- Body -->
             <nav
                 class="p-3 size-full flex flex-col overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-200 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
@@ -41,20 +41,20 @@
                     <!-- Fixed alignment -->
                     <input type="text"
                         placeholder="Search"
-                        class="flex-1 bg-transparent border-none focus:ring-0 text-sm text-black  dark:text-white" />
+                        class="flex-1 bg-transparent border-none focus:ring-0 text-medium text-black dark:text-white" />
                 </button>
 
 
                 <div 
-                    class="pt-3 mt-3 flex flex-col border-t border-gray-200 first:border-t-0 first:pt-0 first:mt-0">
-                    <span class="block ps-2.5 mb-2 font-medium text-xs uppercase text-yellow-500">
+                    class="pt-3 mt-3 flex flex-col border-t border-yellow-500 first:border-t-0 first:pt-0 first:mt-0">
+                    <span class="block ps-2.5 mb-2 font-extrabold text-xs uppercase text-white">
                         Home
                     </span>
 
                     <!-- List -->
                     <ul class="flex flex-col gap-y-1">
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-sm text-black rounded-lg hover:bg-yellow-500 focus:outline-hidden focus:bg-bg-yellow-400"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-white rounded-lg hover:bg-yellow-500 focus:outline-hidden focus:bg-bg-yellow-400"
                                 wire:current="bg-yellow-500"
                                 href="{{ route('admin.dashboard') }}">
                                 Dashboard
@@ -65,18 +65,18 @@
                 </div>
 
                 <div
-                    class="pt-3 mt-3 flex flex-col border-t border-gray-200 first:border-t-0 first:pt-0 first:mt-0">
-                    <span class="block ps-2.5 mb-2 font-medium text-xs uppercase text-yellow-500">
+                    class="pt-3 mt-3 flex flex-col border-t border-yellow-500 first:border-t-0 first:pt-0 first:mt-0">
+                    <span class="block ps-2.5 mb-2 font-extrabold text-xs uppercase text-white">
                         Users
                     </span>
 
                     <!-- List -->
                     <ul class="flex flex-col gap-y-1">
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-sm text-black rounded-lg hover:bg-yellow-500 focus:outline-hidden focus:bg-bg-yellow-400"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-white rounded-lg hover:bg-yellow-500 focus:outline-hidden focus:bg-bg-yellow-400"
                                 wire:current="bg-yellow-500"
-                                href="#">
-                                View All Alumnis
+                                href="{{ route('admin.alumni.view') }}">
+                                View All Alumni
                             </a>
                         </li>
                     </ul>
@@ -84,18 +84,18 @@
                 </div>
 
                 <div
-                    class="pt-3 mt-3 flex flex-col border-t border-gray-200 first:border-t-0 first:pt-0 first:mt-0">
-                    <span class="block ps-2.5 mb-2 font-medium text-xs uppercase text-yellow-500">
-                        Assign Roles & Permissions
+                    class="pt-3 mt-3 flex flex-col border-t border-yellow-500 first:border-t-0 first:pt-0 first:mt-0">
+                    <span class="block ps-2.5 mb-2 font-extrabold text-xs uppercase text-white">
+                        Requests
                     </span>
 
                     <!-- List -->
                     <ul class="flex flex-col gap-y-1">
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-sm text-black rounded-lg hover:bg-yellow-500 focus:outline-hidden focus:bg-yellow-400"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-white rounded-lg hover:bg-yellow-500 focus:outline-hidden focus:bg-yellow-400"
                                 wire:current="bg-yellow-500"
                                 href="#">
-                                Roles
+                                Alumni Application Requests
                             </a>
                         </li>
                     </ul>

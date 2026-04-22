@@ -1,10 +1,10 @@
 <!-- ========== HEADER ========== -->
 <header
-    class="fixed top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-48 lg:z-61 w-full bg-green-600 text-sm py-2.5">
+    class="fixed top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-48 lg:z-61 w-full bg-green-800 text-sm py-2.5">
     <nav class="px-4 sm:px-5.5 flex basis-full items-center w-full mx-auto">
         <div class="w-full flex items-center gap-x-1.5">
             <ul class="flex items-center gap-1.5">
-                <li class="inline-flex items-center relative text-white pe-1.5 last:pe-0 last:after:hidden after:absolute after:top-1/2 after:end-0 after:inline-block after:w-px after:h-3.5 after:bg-gray-300 after:rounded-full after:-translate-y-1/2 after:rotate-12 dark:after:bg-neutral-700">          
+                <li class="inline-flex items-center relative text-yellow-400 pe-1.5 last:pe-0 last:after:hidden after:absolute after:top-1/2 after:end-0 after:inline-block after:w-px after:h-3.5 after:bg-gray-300 after:rounded-full after:-translate-y-1/2 after:rotate-12 dark:after:bg-neutral-700">          
                     <!-- Sidebar Toggle -->
                     <button type="button"
                         class="p-1.5 size-7.5 inline-flex items-center gap-x-1 text-xs rounded-md border border-transparent text-white hover:text-gray-200 disabled:opacity-50 disabled:pointer-events-none focus:outline-hidden"
@@ -22,15 +22,25 @@
                     <!-- End Sidebar Toggle -->
                 </li>
             </ul>
-            <h2 class="font-semibold text-yellow-500">Colegio de Sta. Ana de Victorias - ADMIN</h2>
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-x-3">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.D0DJ0ePPxNcvYOeq6q9esQAAAA?pid=Api&P=0&h=180"
+                alt="School Logo"
+                class="w-12 h-12 rounded-md border-2 border-yellow-400 shadow-sm">
+            <span class="text-xl font-bold text-white tracking-wide hover:text-yellow-400 transition-colors">
+                Colegio de Sta. Ana de Victorias
+            </span>
+            </a>
+            <!-- End Logo -->
+
             <ul class="flex flex-row items-center gap-x-3 ms-auto">
-                <li class="inline-flex items-center gap-1.5 relative text-yellow-500 pe-3 last:pe-0 last:after:hidden after:absolute after:top-1/2 after:end-0 after:inline-block after:w-px after:h-3.5 after:bg-gray-300 after:rounded-full after:-translate-y-1/2 after:rotate-12">
+                <li class="inline-flex items-center gap-1.5 relative text-yellow-500 pe-3 last:pe-0 last:after:hidden after:absolute after:top-1/2 after:end-0 after:inline-block after:w-px after:h-3.5 after:rounded-full after:-translate-y-1/2 after:rotate-12">
                     <div class="h-8">
                         <!-- Account Dropdown -->
                         <div
                             class="hs-dropdown inline-flex [--strategy:absolute] [--auto-close:inside] [--placement:bottom-right] relative text-start">
                             <button id="hs-dnad" type="button"
-                                class="p-0.5 inline-flex shrink-0 items-center gap-x-3 text-start rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:hover:bg-neutral-800 dark:hover:text-neutral-200 dark:focus:bg-neutral-800 dark:focus:text-neutral-200 dark:text-neutral-500"
+                                class="p-0.5 inline-flex shrink-0 items-center gap-x-3 text-start rounded-full hover:bg-yellow-500 focus:outline-hidden focus:bg-yellow-500"
                                 aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
                                 <img class="shrink-0 size-7 rounded-full"
                                     src="https://images.unsplash.com/photo-1659482633369-9fe69af50bfb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=3&w=320&h=320&q=80"
@@ -38,23 +48,23 @@
                             </button>
 
                             <!-- Account Dropdown -->
-                            <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 w-60 transition-[opacity,margin] duration opacity-0 hidden z-20 bg-white border border-gray-200 rounded-xl shadow-xl dark:bg-neutral-900 dark:border-neutral-700"
+                            <div class="hs-dropdown-menu hs-dropdown-open:opacity-100 w-60 transition-[opacity,margin] duration opacity-0 hidden z-20 bg-green-700 border border-yellow-500 rounded-xl shadow-xl"
                                 role="menu" aria-orientation="vertical" aria-labelledby="hs-dnad">
                                 <div class="py-2 px-3.5">
-                                    <span class="font-medium text-gray-800 dark:text-neutral-300">
+                                    <span class="font-extrabold text-white">
                                         {{ Auth::user()->name }}
                                     </span>
-                                    <p class="text-sm text-gray-500 dark:text-neutral-500">
+                                    <p class="text-sm text-white">
                                         {{ Auth::user()->email }}
                                     </p>
                                 </div>
-                                <div class="px-4 py-2 border-t border-gray-200 dark:border-neutral-800">
+                                <div class="px-4 py-2 border-t">
                                     <!-- Switch/Toggle -->
                                     <div class="flex flex-wrap justify-between items-center gap-2">
                                         <span
-                                            class="flex-1 cursor-pointer text-sm text-gray-600 dark:text-neutral-400">Theme</span>
+                                            class="flex-1 cursor-pointer text-sm text-white">Theme</span>
                                         <div
-                                            class="p-0.5 inline-flex cursor-pointer bg-gray-100 rounded-full dark:bg-neutral-800">
+                                            class="p-0.5 inline-flex cursor-pointer bg-yellow-500 rounded-full">
                                             <button type="button"
                                                 class="size-7 flex justify-center items-center bg-white shadow-sm text-gray-800 rounded-full dark:text-neutral-200 hs-auto-mode-active:bg-transparent hs-auto-mode-active:shadow-none hs-dark-mode-active:bg-transparent hs-dark-mode-active:shadow-none"
                                                 data-hs-theme-click-value="default">
@@ -102,7 +112,7 @@
                                     </div>
                                     <!-- End Switch/Toggle -->
                                 </div>
-                                <div class="p-1 border-t border-gray-200 dark:border-neutral-800">
+                                <div class="p-1 border-t">
                                     <livewire:auth::logout />
                                 </div>
                             </div>

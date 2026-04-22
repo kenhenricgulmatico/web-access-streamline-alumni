@@ -11,11 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('degree_programs', function (Blueprint $table) {
+        Schema::create('departments', function (Blueprint $table) {
             $table->id();
-            $table->string('program_name');
-            $table->foreignId('department_id')->constrained('departments')->cascadeOnDelete();
-            $table->enum('level', ['undergraduate', 'graduate', 'postgraduate', 'vocational']);
+            $table->string('department_name')->unique();
             $table->timestamps();
         });
     }
@@ -25,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('degree_programs');
+        Schema::dropIfExists('departments');
     }
 };
