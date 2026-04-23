@@ -100,7 +100,7 @@
                 <div
                     class="pt-3 mt-3 flex flex-col border-t border-yellow-500 first:border-t-0 first:pt-0 first:mt-0">
                     <span class="block ps-2.5 mb-2 font-extrabold text-xs uppercase text-white">
-                        Assign Roles & Permissions
+                       Departments
                     </span>
 
                     <!-- List -->
@@ -108,8 +108,34 @@
                         <li>
                             <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-white rounded-lg hover:bg-yellow-500 focus:outline-hidden focus:bg-yellow-400"
                                 wire:current="bg-yellow-500"
+                                href="{{ route('super-admin.department.view') }}">
+                                View All Departments
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+
+                <div
+                    class="pt-3 mt-3 flex flex-col border-t border-yellow-500 first:border-t-0 first:pt-0 first:mt-0">
+                    <span class="block ps-2.5 mb-2 font-extrabold text-xs uppercase text-white">
+                        Assign Roles & Permissions
+                    </span>
+
+                    <!-- List -->
+                    <ul class="flex flex-col gap-y-1">
+                        <li>
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-white rounded-lg hover:bg-yellow-500 focus:outline-hidden focus:bg-bg-yellow-400"
+                                wire:current="bg-yellow-500"
                                 href="{{ route('view-role') }}">
                                 Roles
+                            </a>
+                        </li>
+                        <li>
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-white rounded-lg hover:bg-yellow-500 focus:outline-hidden focus:bg-yellow-400"
+                                wire:current="bg-yellow-500"
+                                href="{{ route('super-admin.assign.view') }}">
+                                Assign Department
                             </a>
                         </li>
                     </ul>
