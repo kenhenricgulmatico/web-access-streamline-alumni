@@ -1,7 +1,7 @@
 
 <div>
     <!-- ========== DEPARTMENTS SECTION ========== -->
-    <section class="bg-gradient-to-br from-green-800 to-emerald-800 py-20">
+    <section class="py-20">
         <div class="max-w-7xl mx-auto px-6">
 
             <!-- Header -->

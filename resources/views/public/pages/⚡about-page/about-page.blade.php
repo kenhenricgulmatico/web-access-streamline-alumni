@@ -1,8 +1,6 @@
 <div>
   <!-- ========== ABOUT PAGE - ALUMNI COMMUNITY ========== -->
-  <section class="relative min-h-screen bg-gradient-to-br from-green-800 to-emerald-800 overflow-hidden">
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/20"></div>
+  <section class="relative min-h-screen overflow-hidden">
 
     <div class="relative max-w-7xl mx-auto px-6 lg:px-12 py-24 lg:py-40 space-y-24">
 

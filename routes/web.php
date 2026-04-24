@@ -10,6 +10,7 @@ Route::livewire('/contact', 'public::pages.contact-page')->name('contact');
 Route::livewire('/departments', 'public::pages.department-page')->name('departments');
 
 Route::livewire('/login', 'auth::login')->name('login');
+Route::livewire('/register', 'auth::register')->name('register');
 
 Route::middleware(['auth', 'role:super-admin'])->prefix('super-admin')->group(function(){
     Route::livewire('/dashboard', 'super-admin::pages.dashboard')->name('super-admin.dashboard');
@@ -33,6 +34,12 @@ Route::middleware(['auth', 'role:super-admin'])->prefix('super-admin')->group(fu
     Route::livewire('/department/create', 'super-admin::pages.department.create-department')->name('super-admin.department.create');
     Route::livewire('/department/update/{department}', 'super-admin::pages.department.update-department')->name('super-admin.department.update');
 
+    Route::livewire('/batch/view', 'super-admin::pages.batch.view-batch')->name('super-admin.batch.view');
+    Route::livewire('/batch/create', 'super-admin::pages.batch.create-batch')->name('super-admin.batch.create');
+    Route::livewire('/batch/update/{batch}', 'super-admin::pages.batch.update-batch')->name('super-admin.batch.update');
+
+    Route::livewire('/request/view', 'super-admin::pages.request.view-request')->name('super-admin.request.view');
+
 });
 
 Route::middleware(['auth', 'role:admin|super-admin'])->prefix('admin')->group(function(){
@@ -45,6 +52,9 @@ Route::middleware(['auth', 'role:admin|super-admin'])->prefix('admin')->group(fu
 
 Route::middleware(['auth', 'role:alumni|super-admin'])->prefix('alumni')->group(function(){
     Route::livewire('/dashboard', 'alumni::pages.dashboard')->name('alumni.dashboard');
+
+    Route::livewire('/profile/view', 'alumni::pages.profile.view-profile')->name('alumni.profile');
+    Route::livewire('/profile/update/{user}', 'alumni::pages.profile.update-profile')->name('alumni.profile.edit');
 
 });
 

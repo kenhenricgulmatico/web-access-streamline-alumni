@@ -5,7 +5,7 @@
     <a href="/" class="flex items-center gap-x-3">
       <img src="https://tse2.mm.bing.net/th/id/OIP.D0DJ0ePPxNcvYOeq6q9esQAAAA?pid=Api&P=0&h=180"
            alt="School Logo"
-           class="w-12 h-12 rounded-md border-2 border-yellow-400 shadow-sm">
+           class="w-12 h-12 rounded-md border-2 border-transparent shadow-sm">
       <span class="text-xl font-bold text-white tracking-wide hover:text-yellow-400 transition-colors">
         Colegio de Sta. Ana de Victorias
       </span>
@@ -18,11 +18,17 @@
       <a href="/about" class="text-white hover:text-yellow-400 transition-colors">About</a>
       <a href="/contact" class="text-white hover:text-yellow-400 transition-colors">Contact</a>
       <a href="/departments" class="text-white hover:text-yellow-400 transition-colors">Departments</a>
-      <a href="{{ route('login') }}" class="px-5 py-2 rounded-lg bg-yellow-400 text-green-900 font-semibold hover:bg-yellow-500 hover:shadow-md transition-all">
-        Log In
-      </a>
+      
     </div>
     <!-- End Navigation -->
+
+    <!-- Actions (Desktop Buttons) -->
+    <div class="hidden lg:flex items-center gap-x-3">
+      <a href="{{ route('login') }}" 
+        class="px-5 py-2 rounded-lg bg-yellow-400 text-green-900 font-semibold hover:bg-yellow-500 hover:shadow-md transition-all">
+          Log In
+      </a>
+    </div>
 
     <!-- Actions -->
     <div class="flex items-center gap-x-6">
@@ -33,16 +39,23 @@
     </div>
   </nav>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden flex-col gap-y-4 px-6 pb-4 lg:hidden">
-    <a href="/" class="text-white hover:text-yellow-400 transition-colors">Home</a>
-    <a href="/about" class="text-white hover:text-yellow-400 transition-colors">About</a>
-    <a href="/contact" class="text-white hover:text-yellow-400 transition-colors">Contact</a>
-    <a href="/departments" class="text-white hover:text-yellow-400 transition-colors">Departments</a>
-    <a href="{{ route('login') }}" class="px-5 py-2 rounded-lg bg-yellow-400 text-green-900 font-semibold hover:bg-yellow-500 hover:shadow-md transition-all">
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden flex-col gap-y-4 px-6 pb-4 lg:hidden">
+  <a href="/" class="text-white hover:text-yellow-400 transition-colors">Home</a>
+  <a href="/about" class="text-white hover:text-yellow-400 transition-colors">About</a>
+  <a href="/contact" class="text-white hover:text-yellow-400 transition-colors">Contact</a>
+  <a href="/departments" class="text-white hover:text-yellow-400 transition-colors">Departments</a>
+  
+  <div>
+    <a href="{{ route('login') }}" 
+      class="inline-block px-3 py-1.5 rounded-md bg-yellow-400 text-green-900 font-semibold 
+              hover:bg-yellow-500 hover:shadow-md transition-all text-sm w-auto">
         Log In
-      </a>
+    </a>
   </div>
+</div>
+
+
 </header>
 <!-- ========== END HEADER ========== -->
 

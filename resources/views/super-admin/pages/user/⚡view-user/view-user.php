@@ -18,7 +18,7 @@ new #[Layout('layouts::app-super-admin')] class extends Component
      */
     public function deleteSelected()
     {
-        User::whereIn('id', $this->selectedUsers)->delete();
+        User::role(['alumni', 'super-admin', 'admin'])->whereIn('id', $this->selectedUsers)->delete();
 
         $this->selectedUsers = [];
         $this->selectAll = false;
@@ -32,6 +32,7 @@ new #[Layout('layouts::app-super-admin')] class extends Component
         { 
             // Grab IDs from the all pages, not just current page
             $this->selectedUsers = $this->users->getCollection()
+            ->filter(fn($user) => $user->hasRole(['alumni', 'super-admin', 'admin']))
             ->pluck('id')
             ->map(fn($id) => (int) $id)
             ->toArray(); 
@@ -51,7 +52,7 @@ new #[Layout('layouts::app-super-admin')] class extends Component
      */
     public function toggleSelectAll()
     {
-        $allIds = User::pluck('id')->map(fn($id) => (int) $id)->toArray();
+        $allIds = User::role(['alumni', 'super-admin', 'admin'])->pluck('id')->map(fn($id) => (int) $id)->toArray();
 
         $selectedCount = count($this->selectedUsers);
         $totalCount = $this->totalUsersCount;
@@ -88,7 +89,7 @@ new #[Layout('layouts::app-super-admin')] class extends Component
     #[Computed]
     public function totalUsersCount()
     {
-        return User::count();
+        return User::role(['alumni', 'super-admin', 'admin'])->count();
     }
     
     /**
@@ -98,7 +99,8 @@ new #[Layout('layouts::app-super-admin')] class extends Component
     public function users()
     {
         
-        return User::with('roles:id,name')
+        return User::role(['alumni', 'super-admin', 'admin'])
+            ->with('roles:id,name')
             ->select('id', 'name', 'email', 'created_at')
             ->latest()
             ->paginate(5);

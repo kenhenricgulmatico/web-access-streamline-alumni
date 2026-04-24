@@ -1,6 +1,4 @@
-<div class="min-h-screen bg-gradient-to-br from-green-900 to-emerald-800 flex items-center justify-center relative">
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-black/40"></div>
+<div class="min-h-screen flex items-center justify-center relative">
 
   <div class="relative w-full max-w-md mx-auto px-6 py-10 bg-white/10 backdrop-blur-md rounded-2xl border border-white/30 shadow-lg">
     <!-- Header -->
@@ -38,6 +36,14 @@
         class="w-full py-3 px-6 bg-yellow-400 text-green-900 font-semibold rounded-lg hover:bg-yellow-500 transition">
         Log In
       </button>
+
+      <!-- Register Link -->
+      <p class="mt-4 text-center text-sm text-green-100">
+        Don’t have an account?
+        <a href="{{ route('register') }}" class="font-semibold text-yellow-400 hover:text-yellow-500 transition">
+          Register here
+        </a>
+      </p>
     </form>
   </div>
 </div>
