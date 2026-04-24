@@ -10,36 +10,35 @@
 
                     <!-- School Identifier -->
                     <div class="flex items-center gap-3">
-                        <div class="px-5 py-2 bg-white/10 backdrop-blur-md border border-white/30 rounded-2xl">
-                            <span class="text-yellow-300 text-sm font-semibold tracking-widest">COLEGIO DE STA. ANA DE VICTORIAS</span>
+                        <div class="px-5 py-2 bg-green-90 backdrop-blur-md border border-transparent rounded-2xl shadow-lg">
+                            <span class="text-green-700 text-sm font-extrabold tracking-widest">COLEGIO DE STA. ANA DE VICTORIAS</span>
                         </div>
                     </div>
 
                     <!-- Headline -->
-                    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight tracking-tighter">
+                    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-tight tracking-tighter">
                         Alumni Community
-                        <span class="block text-yellow-300 mt-2">Data & Lifelong Connections</span>
+                        <span class="block text-green-700 mt-2">Data & Lifelong Connections</span>
                     </h1>
 
                     <!-- Description -->
-                    <p class="max-w-lg text-lg text-green-100 leading-relaxed">
+                    <p class="max-w-lg text-lg text-black leading-relaxed">
                         Stay connected with fellow graduates, explore achievements, and celebrate the shared legacy
                         of faith, excellence, and service.
                     </p>
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-wrap gap-5 pt-6">
-                        <a href="/alumni-directory"
-                           class="px-9 py-4 bg-red-600 hover:bg-red-700 text-white font-medium rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2">
-                            View Alumni Directory
-                            <span class="text-xl leading-none">→</span>
+                        <a href="{{ route('register') }}"
+                           class="px-9 py-4 bg-green-700 hover:bg-green-800 text-white font-medium rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2">
+                            Register Now
                         </a>
                     </div>
                 </div>
 
                 <!-- Right Visual -->
                 <div class="lg:col-span-5">
-                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/40">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-transparent">
                         <img
                             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80"
                             alt="Alumni Gathering - Colegio de Sta. Ana de Victorias"
@@ -50,21 +49,21 @@
 
             <!-- Simple Statistics -->
             <div class="mt-28 grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
-                <div class="text-center p-10 bg-white/10 backdrop-blur-md rounded-3xl border border-white/30 shadow-lg hover:shadow-xl transition">
-                    <div class="text-5xl lg:text-6xl font-semibold text-white">5,200+</div>
-                    <div class="mt-3 text-green-200 text-sm font-medium tracking-widest">REGISTERED ALUMNI</div>
+                <div class="text-center p-10 bg-green-90 backdrop-blur-md rounded-3xl border border-transparent shadow-xl hover:bg-gray-200 transition">
+                    <div class="text-5xl lg:text-6xl font-semibold text-black">5,200+</div>
+                    <div class="mt-3 text-black text-sm font-medium tracking-widest">REGISTERED ALUMNI</div>
                 </div>
-                <div class="text-center p-10 bg-white/10 backdrop-blur-md rounded-3xl border border-white/30 shadow-lg hover:shadow-xl transition">
-                    <div class="text-5xl lg:text-6xl font-semibold text-white">128</div>
-                    <div class="mt-3 text-green-200 text-sm font-medium tracking-widest">GLOBAL CHAPTERS</div>
+                <div class="text-center p-10 bg-green-90 backdrop-blur-md rounded-3xl border border-transparent shadow-xl hover:bg-gray-200 transition">
+                    <div class="text-5xl lg:text-6xl font-semibold text-black">128</div>
+                    <div class="mt-3 text-black text-sm font-medium tracking-widest">GLOBAL CHAPTERS</div>
                 </div>
-                <div class="text-center p-10 bg-white/10 backdrop-blur-md rounded-3xl border border-white/30 shadow-lg hover:shadow-xl transition">
-                    <div class="text-5xl lg:text-6xl font-semibold text-white">1,350+</div>
-                    <div class="mt-3 text-green-200 text-sm font-medium tracking-widest">SCHOLARSHIPS AWARDED</div>
+                <div class="text-center p-10 bg-green-90 backdrop-blur-md rounded-3xl border border-transparent shadow-xl hover:bg-gray-200 transition">
+                    <div class="text-5xl lg:text-6xl font-semibold text-black">1,350+</div>
+                    <div class="mt-3 text-black text-sm font-medium tracking-widest">SCHOLARSHIPS AWARDED</div>
                 </div>
-                <div class="text-center p-10 bg-white/10 backdrop-blur-md rounded-3xl border border-white/30 shadow-lg hover:shadow-xl transition">
-                    <div class="text-5xl lg:text-6xl font-semibold text-white">7</div>
-                    <div class="mt-3 text-green-200 text-sm font-medium tracking-widest">Departments</div>
+                <div class="text-center p-10 bg-green-90 backdrop-blur-md rounded-3xl border border-transparent shadow-xl hover:bg-gray-200 transition">
+                    <div class="text-5xl lg:text-6xl font-semibold text-black">7</div>
+                    <div class="mt-3 text-black text-sm font-medium tracking-widest">Departments</div>
                 </div>
             </div>
         </div>

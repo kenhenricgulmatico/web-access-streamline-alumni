@@ -19,7 +19,7 @@
 
 <body>
     @include('components.headers.public.header')
-        <main class="bg-gradient-to-br from-green-900 to-emerald-900 min-h-screen">
+        <main class="bg-gradient-to-br from-white to-green-100 min-h-screen">
             {{ $slot }}
         </main>
     @include('components.footers.public.footer')
