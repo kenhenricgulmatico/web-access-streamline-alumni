@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Livewire\Component;
 
 new class extends Component
@@ -29,7 +31,7 @@ new class extends Component
         $this->validate();
 
         // Check if user exists first
-        $user = \App\Models\User::where('email', $this->email)->first();
+        $user = User::where('email', $this->email)->first();
 
         if (! $user) {
             $this->addError('email', 'This email is not registered.');
@@ -37,7 +39,7 @@ new class extends Component
         }
 
         // Now check password
-        if (! \Illuminate\Support\Facades\Hash::check($this->password, $user->password)) {
+        if (!Hash::check($this->password, $user->password)) {
             $this->addError('password', 'Wrong password.');
             return;
         }

@@ -66,8 +66,8 @@ new class extends Component
             'password' => Hash::make($validated['password']),
         ]);
 
-        session()->flash('success', 'wait for admin to accept your request.');
-        return redirect()->route('home');
+        return redirect()->route('pop-up');
+        
     }
 
     protected function sanitizeData($data)
