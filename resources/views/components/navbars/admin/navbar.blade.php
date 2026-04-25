@@ -8,7 +8,7 @@
         w-60
         hidden
         fixed inset-y-0 z-60 start-0
-        bg-green-800
+        bg-green-100 
         lg:block lg:-translate-x-full lg:end-auto lg:bottom-0"
         role="dialog" tabindex="-1" aria-label="Sidebar">
         <div class="lg:pt-15 relative flex flex-col h-full max-h-full">
@@ -41,21 +41,21 @@
                     <!-- Fixed alignment -->
                     <input type="text"
                         placeholder="Search"
-                        class="flex-1 bg-transparent border-none focus:ring-0 text-medium text-black dark:text-white" />
+                        class="flex-1 bg-transparent border-none text-medium text-black dark:text-black" />
                 </button>
 
 
                 <div 
-                    class="pt-3 mt-3 flex flex-col border-t border-yellow-500 first:border-t-0 first:pt-0 first:mt-0">
-                    <span class="block ps-2.5 mb-2 font-extrabold text-xs uppercase text-white">
+                    class="pt-3 mt-3 flex flex-col border-t border-green-700 first:border-t-0 first:pt-0 first:mt-0">
+                    <span class="block ps-2.5 mb-2 font-extrabold text-xs uppercase text-green-700">
                         Home
                     </span>
 
                     <!-- List -->
                     <ul class="flex flex-col gap-y-1">
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-white rounded-lg hover:bg-yellow-500 focus:outline-hidden focus:bg-bg-yellow-400"
-                                wire:current="bg-yellow-500"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden"
+                                wire:current="bg-gray-100"
                                 href="{{ route('admin.dashboard') }}">
                                 Dashboard
                             </a>
@@ -65,16 +65,16 @@
                 </div>
 
                 <div
-                    class="pt-3 mt-3 flex flex-col border-t border-yellow-500 first:border-t-0 first:pt-0 first:mt-0">
-                    <span class="block ps-2.5 mb-2 font-extrabold text-xs uppercase text-white">
-                        Users
+                    class="pt-3 mt-3 flex flex-col border-t border-green-700 first:border-t-0 first:pt-0 first:mt-0">
+                    <span class="block ps-2.5 mb-2 font-extrabold text-xs uppercase text-green-700">
+                        Alumni
                     </span>
 
                     <!-- List -->
                     <ul class="flex flex-col gap-y-1">
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-white rounded-lg hover:bg-yellow-500 focus:outline-hidden focus:bg-bg-yellow-400"
-                                wire:current="bg-yellow-500"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden"
+                                wire:current="bg-gray-100"
                                 href="{{ route('admin.alumni.view') }}">
                                 View All Alumni
                             </a>
@@ -82,25 +82,27 @@
                     </ul>
                     <!-- End List -->
                 </div>
-
+           
                 <div
-                    class="pt-3 mt-3 flex flex-col border-t border-yellow-500 first:border-t-0 first:pt-0 first:mt-0">
-                    <span class="block ps-2.5 mb-2 font-extrabold text-xs uppercase text-white">
+                    class="pt-3 mt-3 flex flex-col border-t border-green-700 first:border-t-0 first:pt-0 first:mt-0">
+                    <span class="block ps-2.5 mb-2 font-extrabold text-xs uppercase text-green-700">
                         Requests
                     </span>
 
                     <!-- List -->
                     <ul class="flex flex-col gap-y-1">
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-white rounded-lg hover:bg-yellow-500 focus:outline-hidden focus:bg-yellow-400"
-                                wire:current="bg-yellow-500"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden"
+                                wire:current="bg-gray-100"
                                 href="#">
-                                Alumni Application Requests
+                                Application Requests
                             </a>
                         </li>
                     </ul>
                     <!-- End List -->
+
                 </div>
+                
             </nav>
             <!-- End Body -->
         </div>

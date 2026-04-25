@@ -6,15 +6,15 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
                 <!-- Total Users Card -->
-                <div class="flex flex-col justify-center border border-white/30 bg-white/10 shadow-2xs rounded-xl">
+                <div class="flex flex-col justify-center border border-white/30 bg-green-90 shadow-2xl rounded-2xl hover:bg-gray-200">
                     <div class="p-4 md:p-5">
                         <div class="flex items-center justify-between">
-                            <p class="text-xs uppercase text-white">
+                            <p class="text-xs uppercase text-green-700">
                                 Total Users
                             </p>
                         </div>
                         <div class="mt-1 flex items-center justify-between">
-                            <h3 class="text-xl sm:text-2xl font-medium text-white">
+                            <h3 class="text-xl sm:text-2xl font-medium text-black">
                                 0
                             </h3>
                         </div>
@@ -23,15 +23,15 @@
                 <!-- End Card -->
 
                 <!-- Total Roles Card -->
-                <div class="flex flex-col justify-center border border-white/30 bg-white/10 shadow-2xs rounded-xl">
+                <div class="flex flex-col justify-center border border-white/30 bg-green-90 shadow-2xl rounded-2xl hover:bg-gray-200">
                     <div class="p-4 md:p-5">
                         <div class="flex items-center justify-between">
-                            <p class="text-xs uppercase text-white">
+                            <p class="text-xs uppercase text-green-700">
                                 Total Roles
                             </p>
                         </div>
                         <div class="mt-1 flex items-center justify-between">
-                            <h3 class="text-xl sm:text-2xl font-medium text-white">
+                            <h3 class="text-xl sm:text-2xl font-medium text-black">
                                 0
                             </h3>
                         </div>
@@ -40,15 +40,15 @@
                 <!-- End Card -->
 
                 <!-- Total Alumni Card -->
-                <div class="flex flex-col justify-center border border-white/30 bg-white/10 shadow-2xs rounded-xl">
+                <div class="flex flex-col justify-center border border-white/30 bg-green-90 shadow-2xl rounded-2xl hover:bg-gray-200">
                     <div class="p-4 md:p-5">
                         <div class="flex items-center justify-between">
-                            <p class="text-xs uppercase text-white">
+                            <p class="text-xs uppercase text-green-700">
                                 Total Alumnis
                             </p>
                         </div>
                         <div class="mt-1 flex items-center justify-between">
-                            <h3 class="text-xl sm:text-2xl font-medium text-white">
+                            <h3 class="text-xl sm:text-2xl font-medium text-black">
                                 0
                             </h3>
                         </div>
@@ -57,15 +57,15 @@
                 <!-- End Card -->
 
                 <!-- Total Faculty Members Card -->
-                <div class="flex flex-col justify-center border border-white/30 bg-white/10 shadow-2xs rounded-xl">
+                <div class="flex flex-col justify-center border border-white/30 bg-green-90 shadow-2xl rounded-2xl hover:bg-gray-200">
                     <div class="p-4 md:p-5">
                         <div class="flex items-center justify-between">
-                            <p class="text-xs uppercase text-white">
+                            <p class="text-xs uppercase text-green-700">
                                 Total Faculty Members
                             </p>
                         </div>
                         <div class="mt-1 flex items-center justify-between">
-                            <h3 class="text-xl sm:text-2xl font-medium text-white">
+                            <h3 class="text-xl sm:text-2xl font-medium text-black">
                                 0
                             </h3>
                         </div>
@@ -79,14 +79,14 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <!-- Card -->
                 <div
-                    class="p-4 md:p-5 min-h-102.5 flex flex-col border border-white/30 bg-white/10 shadow-2xs rounded-xl">
+                    class="p-4 md:p-5 min-h-102.5 flex flex-col border border-white/30 bg-green-90 shadow-2xl rounded-2xl hover:bg-gray-200">
                     <!-- Header -->
                     <div class="flex flex-wrap justify-between items-center gap-2">
                         <div>
-                            <h2 class="text-sm text-white">
+                            <h2 class="text-sm text-green-700   ">
                                 Income
                             </h2>
-                            <p class="text-xl sm:text-2xl font-medium text-white">
+                            <p class="text-xl sm:text-2xl font-medium text-black">
                                 ₱0.00
                             </p>
                         </div>
@@ -99,14 +99,14 @@
 
                 <!-- Card -->
                 <div
-                    class="p-4 md:p-5 min-h-102.5 flex flex-col border border-white/30 bg-white/10 shadow-2xs rounded-xl">
+                    class="p-4 md:p-5 min-h-102.5 flex flex-col border border-white/30 bg-green-90 shadow-2xl rounded-2xl hover:bg-gray-200">
                     <!-- Header -->
                     <div class="flex flex-wrap justify-between items-center gap-2">
                         <div>
-                            <h2 class="text-sm text-white">
+                            <h2 class="text-sm text-green-700   ">
                                 Visitors
                             </h2>
-                            <p class="text-xl sm:text-2xl font-medium text-white">
+                            <p class="text-xl sm:text-2xl font-medium text-black">
                                 0
                             </p>
                         </div>

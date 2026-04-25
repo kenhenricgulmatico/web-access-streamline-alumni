@@ -73,7 +73,7 @@
                                             })"
                                             class="border-gray-300 rounded-sm text-blue-600">
                                     </th>
-                                    <th class="hidden sm:table-cell px-2 sm:px-6 py-3 text-start font-extrabold uppercase text-white">
+                                    <th class="sm:table-cell px-2 sm:px-6 py-3 text-start font-extrabold uppercase text-white">
                                         Name
                                     </th>
                                     <th class="hidden md:table-cell px-2 sm:px-6 py-3 text-start font-extrabold uppercase text-white">
@@ -93,7 +93,7 @@
                                                 x-bind:checked="@js($selectedDepartments).includes({{ $department->id }})"
                                                 class="border-gray-300 rounded-sm text-blue-600 align-middle">
                                         </td>
-                                        <td class="hidden sm:table-cell px-2 sm:px-6 py-3">
+                                        <td class="sm:table-cell px-2 sm:px-6 py-3">
                                             <span class="block text-black font-medium">
                                                 {{ $department->department_name }}
                                             </span>

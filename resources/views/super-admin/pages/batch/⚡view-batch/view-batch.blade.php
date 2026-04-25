@@ -44,7 +44,7 @@
                         <table class="min-w-full text-xs sm:text-sm">
                             <thead class="bg-green-700">
                                 <tr>
-                                    <th class="hidden sm:table-cell px-2 sm:px-6 py-3 text-start font-extrabold uppercase text-white">
+                                    <th class="sm:table-cell px-2 sm:px-6 py-3 text-start font-extrabold uppercase text-white">
                                         Batch Year
                                     </th>
                                     <th class="hidden md:table-cell px-2 sm:px-6 py-3 text-start font-extrabold uppercase text-white">
@@ -57,7 +57,7 @@
                             <tbody class="divide-y divide-white/30">
                                 @forelse ($this->batches as $batch)
                                     <tr>
-                                        <td class="hidden sm:table-cell px-2 sm:px-6 py-3">
+                                        <td class="sm:table-cell px-2 sm:px-6 py-3">
                                             <span class="block text-black">
                                                 {{ $batch->batch_year }}
                                             </span>
