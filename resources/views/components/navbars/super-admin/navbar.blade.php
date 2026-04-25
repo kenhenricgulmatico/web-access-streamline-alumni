@@ -54,7 +54,7 @@
                     <!-- List -->
                     <ul class="flex flex-col gap-y-1">
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-bg-yellow-400"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden"
                                 wire:current="bg-gray-100"
                                 href="{{ route('super-admin.dashboard') }}">
                                 Dashboard
@@ -73,21 +73,21 @@
                     <!-- List -->
                     <ul class="flex flex-col gap-y-1">
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-bg-yellow-400"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden"
                                 wire:current="bg-gray-100"
                                 href="{{ route('super-admin.user.view') }}">
                                 View All Users
                             </a>
                         </li>
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-bg-yellow-400"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden"
                                 wire:current="bg-gray-100"
                                 href="{{ route('super-admin.admin.view') }}">
                                 View All Admins
                             </a>
                         </li>
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-bg-yellow-400"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden"
                                 wire:current="bg-gray-100"
                                 href="{{ route('super-admin.alumni.view') }}">
                                 View All Alumni
@@ -106,10 +106,17 @@
                     <!-- List -->
                     <ul class="flex flex-col gap-y-1">
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-yellow-400"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden"
                                 wire:current="bg-gray-100"
                                 href="{{ route('super-admin.department.view') }}">
                                 View All Departments
+                            </a>
+                        </li>
+                        <li>
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden"
+                                wire:current="bg-gray-100"
+                                href="{{ route('super-admin.courses.view') }}">
+                                View All Courses
                             </a>
                         </li>
                     </ul>
@@ -125,21 +132,21 @@
                     <!-- List -->
                     <ul class="flex flex-col gap-y-1">
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-bg-yellow-400"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden"
                                 wire:current="bg-gray-100"
                                 href="{{ route('view-role') }}">
                                 Roles
                             </a>
                         </li>
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-yellow-400"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden"
                                 wire:current="bg-gray-100"
                                 href="{{ route('super-admin.assign.view') }}">
                                 Assign Department
                             </a>
                         </li>
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-yellow-400"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden"
                                 wire:current="bg-gray-100"
                                 href="{{ route('super-admin.batch.view') }}">
                                 Batch Years
@@ -159,7 +166,7 @@
                     <!-- List -->
                     <ul class="flex flex-col gap-y-1">
                         <li>
-                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-yellow-400"
+                            <a class="w-full flex items-center gap-x-2 py-2 px-2.5 text-medium text-black rounded-lg hover:bg-gray-100 focus:outline-hidden"
                                 wire:current="bg-gray-100"
                                 href="{{ route('super-admin.request.view') }}">
                                 Application Requests

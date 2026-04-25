@@ -49,19 +49,19 @@
 
             <!-- Simple Statistics -->
             <div class="mt-28 grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
-                <div class="text-center p-10 bg-green-90 backdrop-blur-md rounded-3xl border border-transparent shadow-xl hover:bg-gray-200 transition">
+                <div class="text-center p-10 bg-green-90 backdrop-blur-md rounded-3xl border border-transparent shadow-2xl hover:bg-gray-200 transition">
                     <div class="text-5xl lg:text-6xl font-semibold text-black">5,200+</div>
                     <div class="mt-3 text-black text-sm font-medium tracking-widest">REGISTERED ALUMNI</div>
                 </div>
-                <div class="text-center p-10 bg-green-90 backdrop-blur-md rounded-3xl border border-transparent shadow-xl hover:bg-gray-200 transition">
+                <div class="text-center p-10 bg-green-90 backdrop-blur-md rounded-3xl border border-transparent shadow-2xl hover:bg-gray-200 transition">
                     <div class="text-5xl lg:text-6xl font-semibold text-black">128</div>
                     <div class="mt-3 text-black text-sm font-medium tracking-widest">GLOBAL CHAPTERS</div>
                 </div>
-                <div class="text-center p-10 bg-green-90 backdrop-blur-md rounded-3xl border border-transparent shadow-xl hover:bg-gray-200 transition">
+                <div class="text-center p-10 bg-green-90 backdrop-blur-md rounded-3xl border border-transparent shadow-2xl hover:bg-gray-200 transition">
                     <div class="text-5xl lg:text-6xl font-semibold text-black">1,350+</div>
                     <div class="mt-3 text-black text-sm font-medium tracking-widest">SCHOLARSHIPS AWARDED</div>
                 </div>
-                <div class="text-center p-10 bg-green-90 backdrop-blur-md rounded-3xl border border-transparent shadow-xl hover:bg-gray-200 transition">
+                <div class="text-center p-10 bg-green-90 backdrop-blur-md rounded-3xl border border-transparent shadow-2xl hover:bg-gray-200 transition">
                     <div class="text-5xl lg:text-6xl font-semibold text-black">7</div>
                     <div class="mt-3 text-black text-sm font-medium tracking-widest">Departments</div>
                 </div>

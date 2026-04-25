@@ -1,6 +1,6 @@
 <div class="min-h-screen flex items-center justify-center relative">
 
-  <div class="shadow-xl relative w-full max-w-md mx-auto px-6 py-10 bg-green-90 backdrop-blur-md rounded-2xl border border-white/30">
+  <div class="shadow-2xl relative w-full max-w-md mx-auto px-6 py-10 bg-green-90 backdrop-blur-md rounded-2xl border border-white/30">
     <!-- Header -->
     <div class="text-center mb-8">
       <h3 class="text-3xl font-bold text-green-700">Log In</h3>

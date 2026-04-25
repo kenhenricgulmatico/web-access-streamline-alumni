@@ -31,7 +31,7 @@
         </div>
 
         <!-- Contact Form -->
-        <form action="#" method="POST" class="space-y-6 bg-green-90 shadow-xl backdrop-blur-md p-8 rounded-3xl border border-white/30">
+        <form action="#" method="POST" class="space-y-6 bg-green-90 shadow-2xl backdrop-blur-md p-8 rounded-3xl border border-white/30 bg-green-90">
           <div>
             <label class="block text-sm font-medium text-black mb-2">Name</label>
             <input type="text" name="name" class="w-full px-4 py-3 rounded-lg border border-black text-black placeholder-black focus:outline-none">
